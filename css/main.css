@@ -1,0 +1,93 @@
+body {
+  font: 100% Arial, Helvetica, sans-serif;
+  margin: 0; }
+
+header {
+  background: url("../images/world.jpg") center/cover fixed;
+  height: 100vh; }
+
+.content_container {
+  width: 90%;
+  margin: 0 auto; }
+
+#hero_content_container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6); }
+
+h1 {
+  color: #6FDC6F;
+  font: 2.1875rem Bangers, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin: 0; }
+
+#hero_text {
+  text-align: center; }
+  #hero_text q, #hero_text p {
+    color: #FFFFFF;
+    font-style: italic; }
+  #hero_text q {
+    display: block;
+    margin: 10px 0 7px; }
+  #hero_text p {
+    margin: 0 0 10px; }
+
+.button {
+  text-decoration: none;
+  padding: 5px 50px;
+  border-radius: 20px;
+  font-weight: bold; }
+  .button:active {
+    transform: translateY(4px); }
+
+#contact_btn {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: border 300ms, color 300ms, padding 300ms; }
+  #contact_btn:hover {
+    border: 1px solid #6FDC6F;
+    color: #6FDC6F;
+    padding: 5px 60px; }
+
+.fa-chevron-down {
+  position: absolute;
+  bottom: 10px;
+  color: #FFFFFF;
+  font-size: 2rem;
+  animation: arrowDown 1s ease-in-out infinite alternate; }
+
+@keyframes arrowDown {
+  from {
+    transform: translateY(-4px); }
+  to {
+    transform: translateY(4px); } }
+#test_image {
+  background: url("../images/clouds.jpg") center/cover fixed;
+  height: 300px; }
+
+#test_image2 {
+  background: url("../images/skyline.jpg") center/cover fixed;
+  height: 300px; }
+
+#profile_section {
+  background-color: #EDEEEF; }
+
+section:last-child {
+  background-color: green; }
+
+@media only screen and (min-width: 440px) {
+  h1 {
+    color: green; } }
+@media only screen and (min-width: 768px) {
+  h1 {
+    color: purple; } }
+@media only screen and (min-width: 1020px) {
+  h1 {
+    color: yellow; } }
+
+/*# sourceMappingURL=main.css.map */
