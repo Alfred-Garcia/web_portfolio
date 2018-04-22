@@ -2,13 +2,13 @@ body {
   font: 100% Arial, Helvetica, sans-serif;
   margin: 0; }
 
-header {
+#hero_header {
   background: url("../images/world.jpg") center/cover fixed;
   height: 100vh; }
 
 .content_container {
-  width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 90%; }
 
 #hero_content_container {
   height: 100%;
@@ -21,44 +21,31 @@ header {
 
 h1 {
   color: #6FDC6F;
+  font-weight: bolder;
   font: 2.1875rem Bangers, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   margin: 0; }
 
+p, q {
+  line-height: 1.5; }
+
 #hero_text {
   text-align: center; }
   #hero_text q, #hero_text p {
+    font-size: 1.125rem;
     color: #FFFFFF;
     font-style: italic; }
   #hero_text q {
     display: block;
-    margin: 10px 0 7px; }
+    margin: .556em 0 .389em; }
   #hero_text p {
-    margin: 0 0 10px; }
-
-.button {
-  text-decoration: none;
-  padding: 5px 50px;
-  border-radius: 20px;
-  font-weight: bold; }
-  .button:active {
-    transform: translateY(4px); }
-
-#contact_btn {
-  color: white;
-  background-color: transparent;
-  border: 1px solid white;
-  transition: border 300ms, color 300ms, padding 300ms; }
-  #contact_btn:hover {
-    border: 1px solid #6FDC6F;
-    color: #6FDC6F;
-    padding: 5px 60px; }
+    margin: 0; }
 
 .fa-chevron-down {
+  color: #6FDC6F;
+  font-size: 2.1875rem;
   position: absolute;
-  bottom: 10px;
-  color: #FFFFFF;
-  font-size: 2rem;
+  bottom: .286em;
   animation: arrowDown 1s ease-in-out infinite alternate; }
 
 @keyframes arrowDown {
@@ -66,28 +53,127 @@ h1 {
     transform: translateY(-4px); }
   to {
     transform: translateY(4px); } }
-#test_image {
-  background: url("../images/clouds.jpg") center/cover fixed;
-  height: 300px; }
-
-#test_image2 {
-  background: url("../images/skyline.jpg") center/cover fixed;
-  height: 300px; }
+.content_sections h2, .content_sections h3 {
+  font-family: Bangers, Arial, Helvetica, sans-serif;
+  text-align: center; }
+.content_sections h2 {
+  font-size: 1.563rem;
+  margin: .400em 0; }
+.content_sections h3 {
+  font-size: 1.25rem;
+  margin: 0 0 .5em 0; }
 
 #profile_section {
-  background-color: #EDEEEF; }
+  background-color: #a6a6a6;
+  border-top: 0.625rem solid #262626;
+  border-bottom: 0.625rem solid #262626; }
 
-section:last-child {
-  background-color: green; }
+#profile_image_container {
+  text-align: center; }
+  #profile_image_container p {
+    margin: .313em 0; }
+    #profile_image_container p:last-child {
+      margin-bottom: .625em; }
+
+#profile_image {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-align: center; }
+
+.bold_text {
+  font-weight: bold; }
+
+#profile_text p {
+  margin: 0 0 .625em 0; }
+
+.parallax_img {
+  height: 400px; }
+
+#earth_zoom {
+  background: url("../images/clouds.jpg") center/cover fixed; }
+
+#projects_section {
+  background-color: #c3d3ee;
+  border-top: 0.625rem solid #6B93D6;
+  border-bottom: 0.625rem solid #6B93D6; }
+
+.indv_project {
+  background-color: #FAFAFA;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px; }
+
+.project_image {
+  display: block;
+  width: 100%;
+  border: 1px solid black; }
+
+#earth_zoom2 {
+  background: url("../images/skyline.jpg") center/cover fixed; }
+
+#contact_section {
+  background-color: #eae0c7;
+  border-top: 0.625rem solid #D8C596;
+  border-bottom: 0.625rem solid #D8C596; }
+
+#contact_form {
+  display: flex;
+  flex-flow: column nowrap; }
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid black; }
+
+.button {
+  padding: 5px 50px;
+  border-radius: 20px;
+  font-weight: bold; }
+  .button:active {
+    transform: translateY(4px); }
+
+#contact_btn {
+  align-self: center;
+  background-color: #D8C596;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  transition: padding 300ms; }
+  #contact_btn:hover {
+    padding: 5px 60px; }
 
 @media only screen and (min-width: 440px) {
   h1 {
-    color: green; } }
+    font-size: 3.125rem; }
+
+  #hero_text q, #hero_text p {
+    font-size: 1.375rem; } }
 @media only screen and (min-width: 768px) {
   h1 {
-    color: purple; } }
+    font-size: 4.0625rem; }
+
+  #hero_text q, #hero_text p {
+    font-size: 1.625rem; } }
 @media only screen and (min-width: 1020px) {
   h1 {
-    color: yellow; } }
+    font-size: 4.6875rem; }
+
+  #hero_content_container {
+    width: 90%;
+    margin: 0 auto; }
+
+  #hero_text q, #hero_text p {
+    font-size: 1.875rem; }
+
+  #profile_info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly; }
+    #profile_info #profile_image_container {
+      flex: 1; }
+    #profile_info #profile_text {
+      flex: 1; } }
 
 /*# sourceMappingURL=main.css.map */

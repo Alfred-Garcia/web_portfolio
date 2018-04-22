@@ -1,139 +1,266 @@
 $fontStack: Arial, Helvetica, sans-serif;
 $myBlue: #7FFFFF;
+$myEarthBlue: #6B93D6;
+$myLightEarthBlue: #c3d3ee;
 $myLime: #6FDC6F;
-$myGray: #26262A;
+$myLightLime: #c1f0c1;
 $myLightGray: #EDEEEF;
+$myEarthBrown: #D8C596;
+$myLightEarthBrown: #eae0c7;
+$mySkyBlack: #262626;
+$myLightSkyBlack: #a6a6a6;
 
 body {
-    font: 100% $fontStack;
-    margin: 0;
+  font: 100% $fontStack;
+  margin: 0;
 }
 
-header {
-    background: url("../images/world.jpg") center/cover fixed;
-    height: 100vh;
+#hero_header {
+  background: url("../images/world.jpg") center/cover fixed;
+  height: 100vh;
 }
 
 .content_container {
-    width: 90%;
-    margin: 0 auto;
+  margin: 0 auto;
+  width: 90%;
 }
 
 #hero_content_container {
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6)
 }
 
 h1 {
-    color: $myLime;
-    font: 2.1875rem Bangers, $fontStack;
-    text-transform: uppercase;
-    margin: 0;
+  color: $myLime;
+  font-weight: bolder;
+  font: 2.1875rem Bangers, $fontStack;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p, q {
+  line-height: 1.5;
 }
 
 #hero_text {
-    text-align: center;
-    q, p {
-        color: #FFFFFF;
-        font-style: italic;
-    }
-    q {
-        display: block;
-        margin: 10px 0 7px;
-    }
-    p {
-        margin: 0 0 10px;
-    }
-}
-
-.button {
-    text-decoration: none;
-    padding: 5px 50px;
-    border-radius: 20px;
-    font-weight: bold;
-    &:active {
-        transform: translateY(4px);
-    }
-}
-
-#contact_btn {
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
-    transition: border 300ms, color 300ms, padding 300ms;
-    &:hover {
-        border: 1px solid $myLime;
-        color: $myLime;
-        padding: 5px 60px;
-    }
+  text-align: center;
+  q, p {
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    font-style: italic;
+  }
+  q {
+    display: block;
+    margin: .556em 0 .389em;
+  }
+  p {
+    margin: 0;
+  }
 }
 
 .fa-chevron-down {
-    position: absolute;
-    bottom: 10px;
-    color: #FFFFFF;
-    font-size: 2rem;
-    animation: arrowDown 1s ease-in-out infinite alternate;
+  color: $myLime;
+  font-size: 2.1875rem;
+  position: absolute;
+  bottom: .286em;
+  animation: arrowDown 1s ease-in-out infinite alternate;
 }
 
 @keyframes arrowDown {
-    from {
-        transform: translateY(-4px);
-    }
-    to {
-        transform: translateY(4px);
-    }
+  from {
+      transform: translateY(-4px);
+  }
+  to {
+      transform: translateY(4px);
+  }
+}
+
+.content_sections {
+  h2, h3 {
+    font-family: Bangers, $fontStack;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.563rem;
+    margin: .400em 0;
+  }
+  h3 {
+    font-size: 1.25rem;
+    margin: 0 0 .5em 0;
+  }
 }
 
 #profile_section {
-    
+  background-color: $myLightSkyBlack;
+  border-top: .625rem solid $mySkyBlack;
+  border-bottom: .625rem solid $mySkyBlack;
 }
 
+#profile_image_container {
+  text-align: center;
+  p {
+    margin: .313em 0;
+    &:last-child {
+      margin-bottom: .625em;
+    }
+  }
+}
 
+#profile_image {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-align: center;
+}
 
-#test_image {
+.bold_text {
+  font-weight: bold;
+}
+
+#profile_text {
+  p {
+    margin: 0 0 .625em 0;
+  }
+}
+
+.parallax_img {
+  height: 400px;
+}
+
+#earth_zoom {
     background: url("../images/clouds.jpg") center/cover fixed;
-    height: 300px;
 }
 
-#test_image2 {
+#projects_section {
+  background-color: $myLightEarthBlue;
+  border-top: .625rem solid $myEarthBlue;
+  border-bottom: .625rem solid $myEarthBlue;
+}
+
+.indv_project {
+  background-color: #FAFAFA;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.project_image {
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+}
+
+#earth_zoom2 {
     background: url("../images/skyline.jpg") center/cover fixed;
-    height: 300px;
 }
 
-#profile_section {
-    background-color: $myLightGray;
+#contact_section {
+  background-color: $myLightEarthBrown;
+  border-top: .625rem solid $myEarthBrown;
+  border-bottom: .625rem solid $myEarthBrown;
+}
+
+#contact_form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid black;
+}
+
+.button {
+  padding: 5px 50px;
+  border-radius: 20px;
+  font-weight: bold;
+  &:active {
+      transform: translateY(4px);
+  }
+}
+
+#contact_btn {
+  align-self: center;
+  background-color: $myEarthBrown;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  transition: padding 300ms;
+  &:hover {
+      padding: 5px 60px;
+  }
 }
 
 
 
-section:last-child {
-    background-color: green;
-}
+
+
+
+
+
+
+
+
 
 
 
 @media only screen and (min-width: 440px) {
-    h1 {
-        color: green;
+  h1 {
+    font-size: 3.125rem;
+  }
+
+  #hero_text {
+    q, p {
+      font-size: 1.375rem;
     }
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    h1 {
-        color: purple;
+  h1 {
+    font-size: 4.0625rem;
+  }
+
+  #hero_text {
+    q, p {
+      font-size: 1.625rem;
     }
+  }
 }
 
 @media only screen and (min-width: 1020px) {
+  h1 {
+    font-size: 4.6875rem;
+  }
 
+  #hero_content_container {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-    h1 {
-        color: yellow;
+  #hero_text {
+    q, p {
+      font-size: 1.875rem;
     }
+  }
+
+  #profile_info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    #profile_image_container {
+      flex: 1;
+    }
+    #profile_text {
+      flex: 1;
+    }
+  }
+
 }
