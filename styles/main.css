@@ -1,7 +1,40 @@
+/*------------------------------------------------------------------------------*
+  MAIN SCSS IMPORT FILES
+*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*
+  VARIABLES
+*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*
+  BASE STYLES
+*------------------------------------------------------------------------------*/
+/* Ordering of CSS Properties:
+1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
+*/
 body {
   font: 100% Arial, Helvetica, sans-serif;
   margin: 0; }
 
+h1 {
+  color: #6FDC6F;
+  font-weight: bolder;
+  font: 2.1875rem Bangers, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin: 0; }
+
+p, q {
+  line-height: 1.5; }
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid black; }
+
+/*------------------------------------------------------------------------------*
+  LAYOUT STYLES
+*------------------------------------------------------------------------------*/
+/* Ordering of CSS Properties:
+1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
+*/
 #hero_header {
   background: url("../images/world.jpg") center/cover fixed;
   height: 100vh; }
@@ -19,16 +52,12 @@ body {
   align-items: center;
   background: rgba(0, 0, 0, 0.6); }
 
-h1 {
-  color: #6FDC6F;
-  font-weight: bolder;
-  font: 2.1875rem Bangers, Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  margin: 0; }
-
-p, q {
-  line-height: 1.5; }
-
+/*------------------------------------------------------------------------------*
+  MODULE STYLES
+*------------------------------------------------------------------------------*/
+/* Ordering of CSS Properties:
+1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
+*/
 #hero_text {
   text-align: center; }
   #hero_text q, #hero_text p {
@@ -123,11 +152,6 @@ p, q {
   display: flex;
   flex-flow: column nowrap; }
 
-input {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid black; }
-
 .button {
   padding: 5px 50px;
   border-radius: 20px;
@@ -144,6 +168,12 @@ input {
   #contact_btn:hover {
     padding: 5px 60px; }
 
+/*------------------------------------------------------------------------------*
+  STATE STYLES
+*------------------------------------------------------------------------------*/
+/* Ordering of CSS Properties:
+1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
+*/
 @media only screen and (min-width: 440px) {
   h1 {
     font-size: 3.125rem; }

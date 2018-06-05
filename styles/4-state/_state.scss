@@ -1,0 +1,59 @@
+/*------------------------------------------------------------------------------*
+  STATE STYLES
+*------------------------------------------------------------------------------*/
+/* Ordering of CSS Properties:
+1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
+*/
+@media only screen and (min-width: 440px) {
+  h1 {
+    font-size: 3.125rem;
+  }
+
+  #hero_text {
+    q, p {
+      font-size: 1.375rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.0625rem;
+  }
+
+  #hero_text {
+    q, p {
+      font-size: 1.625rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  h1 {
+    font-size: 4.6875rem;
+  }
+
+  #hero_content_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #hero_text {
+    q, p {
+      font-size: 1.875rem;
+    }
+  }
+
+  #profile_info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    #profile_image_container {
+      flex: 1;
+    }
+    #profile_text {
+      flex: 1;
+    }
+  }
+
+}

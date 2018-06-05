@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------------------*
+  LAYOUT STYLES
+*------------------------------------------------------------------------------*/
+/* Ordering of CSS Properties:
+1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
+*/
+#hero_header {
+  background: url("../images/world.jpg") center/cover fixed;
+  height: 100vh;
+}
+
+.content_container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#hero_content_container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6)
+}

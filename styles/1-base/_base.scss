@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------------------*
+  BASE STYLES
+*------------------------------------------------------------------------------*/
+/* Ordering of CSS Properties:
+1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
+*/
+body {
+  font: 100% $fontStack;
+  margin: 0;
+}
+
+h1 {
+  color: $myLime;
+  font-weight: bolder;
+  font: 2.1875rem Bangers, $fontStack;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p, q {
+  line-height: 1.5;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid black;
+}
