@@ -12,7 +12,27 @@
 */
 body {
   font: 100% Arial, Helvetica, sans-serif;
+  background-color: white;
   margin: 0; }
+
+nav {
+  flex: 3;
+  border: 1px solid yellow;
+  align-content: center; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+li {
+  display: inline-block; }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem; }
 
 h1 {
   color: #6FDC6F;
@@ -35,6 +55,14 @@ input {
 /* Ordering of CSS Properties:
 1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
 */
+header {
+  padding: .625em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black; }
+
 #hero_header {
   background: url("../images/world.jpg") center/cover fixed;
   height: 100vh; }
@@ -58,6 +86,38 @@ input {
 /* Ordering of CSS Properties:
 1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
 */
+.fa-bars {
+  color: white;
+  font-size: 1.5rem;
+  flex: 1;
+  border: 1px solid green;
+  text-align: center; }
+
+.social-container {
+  flex: 1;
+  border: 1px solid red;
+  text-align: center; }
+
+.social-icon {
+  color: white;
+  font-size: 1.5rem;
+  transition: color .3s ease-in-out, transform .75s ease-in-out; }
+
+.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-linkedin:hover {
+  transform: rotate(360deg); }
+
+.fa-facebook-square:hover {
+  color: #3B5998; }
+
+.fa-twitter-square {
+  margin: 0 .208em; }
+
+.fa-twitter-square:hover {
+  color: #1DA1F2; }
+
+.fa-linkedin:hover {
+  color: #0077B5; }
+
 #hero_text {
   text-align: center; }
   #hero_text q, #hero_text p {

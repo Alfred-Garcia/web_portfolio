@@ -6,7 +6,31 @@
 */
 body {
   font: 100% $fontStack;
+  background-color: white;
   margin: 0;
+}
+
+nav {
+  flex: 3;
+  border: 1px solid yellow;
+  align-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
 }
 
 h1 {
