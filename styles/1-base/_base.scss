@@ -10,8 +10,9 @@ body {
   margin: 0;
 }
 
+
+
 nav {
-  flex: 3;
   border: 1px solid yellow;
   align-content: center;
 }
@@ -21,6 +22,11 @@ ul {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 li {

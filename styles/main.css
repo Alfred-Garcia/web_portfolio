@@ -16,7 +16,6 @@ body {
   margin: 0; }
 
 nav {
-  flex: 3;
   border: 1px solid yellow;
   align-content: center; }
 
@@ -25,6 +24,10 @@ ul {
   margin: 0;
   padding: 0;
   text-align: center; }
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap; }
 
 li {
   display: inline-block; }
@@ -55,11 +58,11 @@ input {
 /* Ordering of CSS Properties:
 1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
 */
-header {
-  padding: .625em;
+#site-header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  padding: .625em;
+  justify-content: space-between;
   align-items: center;
   background-color: black; }
 
@@ -87,14 +90,12 @@ header {
 1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
 */
 .fa-bars {
-  color: white;
-  font-size: 1.5rem;
-  flex: 1;
+  font-size: 1.75rem;
   border: 1px solid green;
+  color: white;
   text-align: center; }
 
 .social-container {
-  flex: 1;
   border: 1px solid red;
   text-align: center; }
 

@@ -5,11 +5,11 @@
 1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
 */
 
-header {
-  padding: .625em;
+#site-header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  padding: .625em;
+  justify-content: space-between;
   align-items: center;
   background-color: black;
 }
