@@ -1,55 +1,211 @@
 /*------------------------------------------------------------------------------*
   MODULE STYLES
 *------------------------------------------------------------------------------*/
-/* Ordering of CSS Properties:
-1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
-*/
+//Site Header Styles
+#site-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-bottom: .3125em solid white;
+  position: relative;
+  .fa-bars {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    &:hover {
+      color: $myBlue;
+    }
+  }
+  > nav {
+    position: absolute;
+    top: calc(100% + .3125em);
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: black;
+    .block-li:nth-child(2) {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+    .cntr-link {
+      color: white;
+      font: 1.25rem $titleFontStack;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        color: $myBlue;
+      }
+    }
+  }
+}
 
-//Hamburger Menu Decoration
-.fa-bars {
-  font-size: 1.75rem;
-  border: 1px solid green;
-  color: white;
+//Social Icon Container Styles
+.social-icon-ctn {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 135px;
+  > a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .social-icon {
+    font-size: 2rem;
+    color: white;
+    transition: color .3s ease-in-out, transform .75s ease-in-out;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+  .fa-facebook-square:hover { color: $fbBlue; }
+  .fa-twitter-square:hover { color: $twBlue; }
+  .fa-linkedin:hover { color: $liBlue; }
+  .fa-github-square:hover { color: $ghBlue; }
+}
+
+#hero-ctn {
+  background: url(/images/world.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+
+
+
+
+
+.btn-transparent {
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+}
+
+.ul-flush-left {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.block-li {
+  display: block;
+}
+
+.cntr-link {
+  display: block;
   text-align: center;
+  padding: 10px 0;
 }
 
-//Social Media Icon Decoration
-.social-container {
-  border: 1px solid red;
-  text-align: center;
+.content-ctn {
+  padding: .625em;
 }
 
-.social-icon {
-  color: white;
-  font-size: 1.5rem;
-  transition: color .3s ease-in-out, transform .75s ease-in-out;
+
+
+#bio-container {
+  background-color: $myLightEarthBlue;
+  height: 50vh;
+  h2 {
+    background-color: white;
+  }
 }
 
-.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-linkedin:hover {
-  transform: rotate(360deg);
+#projects-container {
+  background-color: white;
 }
 
-.fa-facebook-square:hover {
-  color: $fbBlue;
+#contact-container {
+  background-color: $myLightEarthBlue;
+
 }
 
-.fa-twitter-square {
-  margin: 0 .208em;
+#site-footer {
+  background-color: black;
 }
 
-.fa-twitter-square:hover {
-  color: $twBlue;
+/*Start of Desktop Styles*/
+@media (min-width: 500px) {
+
+
+  #site-header {
+    grid-area: header;
+  }
+
+  #hero-ctn {
+    grid-area: hero;
+  }
+
+  #bio-container {
+    grid-area: bio;
+  }
+
+  #projects-container {
+    grid-area: projects;
+  }
+
+  #contact-container {
+    grid-area: contact;
+  }
+
+  #site-footer {
+    grid-area: footer;
+  }
+
+  #headshot {
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 5px;
+    float: left;
+    margin-right: 100px;
+  }
+
+
 }
 
-.fa-linkedin:hover {
-  color: $liBlue;
+
+
+
+
+
+
+//Main Site Navigation
+
+
+//Main Social Media Decoration (Header)
+
+
+
+
+#headshot {
+  display: block;
+  margin: 0 auto 10px auto;
 }
 
-//Some New Decoration
+
+#contact-ctn {
+  > p {
+    margin-bottom: 100px;
+  }
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 #hero_text {
   text-align: center;
   q, p {
@@ -195,3 +351,4 @@
       padding: 5px 60px;
   }
 }
+*/

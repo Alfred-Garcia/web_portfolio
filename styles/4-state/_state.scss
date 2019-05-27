@@ -1,9 +1,75 @@
 /*------------------------------------------------------------------------------*
   STATE STYLES
 *------------------------------------------------------------------------------*/
-/* Ordering of CSS Properties:
-1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
-*/
+.is-hidden {
+  display: none;
+}
+
+
+/*Start of Medium Tablet Styles*/
+@media only screen and (min-width: 440px) {
+
+}
+
+/*Start of Large Tablet Styles*/
+@media only screen and (min-width: 768px) {
+
+
+  .fa-bars {
+    display: none;
+  }
+
+  .site-nav {
+    display: block;
+    ul {
+      list-style-type: none;
+    }
+    li {
+      display: inline;
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      color: white;
+      font-size: 1.5rem;
+      transition: color .5s ease-in-out;
+      &:hover {
+        color: $myBlue;
+      }
+    }
+  }
+
+  .main-social-container {
+    .social-icon {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+
+
+.is-hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 @media only screen and (min-width: 440px) {
   h1 {
     font-size: 3.125rem;
@@ -57,3 +123,4 @@
   }
 
 }
+*/

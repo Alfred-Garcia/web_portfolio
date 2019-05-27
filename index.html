@@ -3,38 +3,91 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Alfred Garcia, Spring 2018">
-    <meta name="description" content="Welcome to my Web Portfolio! My name is Alfred Garcia and I am pleased to meet you! I hope you enjoy your time on my site and feel free to ask me any questions you may have.">
+    <meta name="author" content="Alfred Garcia, Winter 2019">
+    <meta name="description" content="Welcome to my Web Portfolio! My name is Alfred Garcia and I am pleased to meet you! I hope you enjoy your time on my site; feel free to ask me any questions you may have.">
     <meta name="keywords" content="job, resume, landing, website, Alfred, Garcia, hired, employee">
     <title title="Alfred Garcia | Home Page">Alfred Garcia | Home Page</title>
     <!--Document Links Below this Line-->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Open+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <script src="scripts/#" defer></script>
+    <script src="scripts/main.js" defer></script>
     <noscript>It looks like your Browser doesn't support Javascript!</noscript>
   </head>
   <body>
+    <div id="site-wrapper">
+      <header id="site-header" class="content-ctn">
+        <div class="social-icon-ctn">
+          <a href="https://www.facebook.com/alfred.garcia.75" type="text/html" target="_blank" title="Facebook Link"><span class="fab fa-facebook-square social-icon"></span></a>
+          <a href="https://twitter.com/TechMeOut15?lang=en" type="text/html" target="_blank" title="Twitter Link"><span class="fab fa-twitter-square social-icon"></span></a>
+          <a href="https://www.linkedin.com/in/alfredgarcia10/" type="text/html" target="_blank" title="LinkedIn Link"><span class="fab fa-linkedin social-icon"></span></a>
+          <a href="https://github.com/Alfred-Garcia/web_portfolio" type="text/html" target="_blank" title="Github Repository"><span class="fab fa-github-square social-icon"></span></a>
+        </div>
+        <button type="button" id="nav-display-btn" class="btn btn-transparent"><span class="fas fa-bars"></span></button>
+        <nav class="is-hidden">
+          <ul class="ul-flush-left">
+            <li class="block-li"><a href="#bio-ctn" type="text/html" class="cntr-link" title="Learn About Alfred Garcia">About Me</a></li>
+            <li class="block-li"><a href="#projects-ctn" type="text/html" class="cntr-link" title="Alfred Garcia's Projects">Projects</a></li>
+            <li class="block-li"><a href="#contact-ctn" type="text/html" class="cntr-link" title="Alfred Garcia's Contact Information">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <header id="site-header">
-      <span class="fas fa-bars"></span>
+      <section id="hero-ctn">
+        <div id="hero-text">
+          <h1>Welcome to my World...</h1>
+          <q>A dream doesn't become reality through magic; it takes sweat, determination, and hard work.</q>
+          <p>~Colin Powell</p>
+        </div>
+      </section>
 
-      <nav>
-        <ul>
-          <li><a href="#" title="About Me">About Me</a></li>
-          <li><a href="#" title="Projects">Projects</a></li>
-          <li><a href="#" title="Contact Me">Contact Me</a></li>
-        </ul>
-      </nav>
+      <section id="bio-container" class="content-ctn">
+        <h2>Meet the Developer</h2>
+        <img id="headshot" src="images/profileImageSmall.jpg">
+        <p>
+          Welcome to my webpage! Please feel free to click any of the links below
+          to get a better understanding of my web development skills. If you find
+          that you have any questions, please feel free to ask by filling out the
+          contact information section below!
+        </p>
+      </section>
 
-      <div class="social-container">
-        <a href="https://www.facebook.com/alfred.garcia.75" title="Facebook Link"><span class="social-icon fab fa-facebook-square"></span></a>
-        <a href="https://twitter.com/TechMeOut15?lang=en" title="Twitter Link"><span class="social-icon fab fa-twitter-square"></span></a>
-        <a href="https://www.linkedin.com/in/alfredgarcia10/" title="LinkedIn Link"><span class="social-icon fab fa-linkedin"></span></a>
-      </div>
+      <section id="projects-container" class="content-ctn">
+        <h2>My Completed Projects</h2>
+        <div class="project-card">
+          <img src="#" alt="Project 1 Image">
+          <p>This project was completed for a restaurant by the name of Tacoshop. It was meant to demonstrate my knowledge of the food industry and making eye-catching designs.</p>
+        </div>
+        <div class="project-card">
+          <img src="#" alt="Project 2 Image">
+          <p>This project was completed for my old department at CSUSB. It was developed to make our equipment checkout process more efficient.</p>
+        </div>
+      </section>
 
-    </header>
+      <section id="contact-ctn" class="content-ctn">
+        <h2>Contact Me</h2>
+        <p>Complete the information below and I will get back to you as soon as possible.</p>
+        <form id="contact-form" action="#" method="post" autocomplete="on">
+          <label>First Name:<input type="text" name="f_name" required></label>
+          <label>Last Name:<input type="text" name="l_name" required></label>
+          <label>Email Address:<input type="text" name="email" required></label>
+          <label>Your Message:<textarea name="message"></textarea></label>
+          <input type="submit" value="Submit Form">
+        </form>
+      </section>
+
+      <footer id="site-footer" class="content-ctn">
+        <div class="footer-container">
+          <ul>
+            <li><a href="https://www.facebook.com/alfred.garcia.75">Facebook</a></li>
+            <li><a href="https://twitter.com/TechMeOut15?lang=en">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/alfredgarcia10/">LinkedIn</a></li>
+          </ul>
+        </div>
+        <small>&copy; APG Creations</small>
+      </footer>
+
 
 <!--
     <header id="l-site-header">
@@ -53,7 +106,7 @@
     </header>
 -->
 
-
+<!--
     <section class="projects-container">
       <div class="project">
         <img class="project-screenshot" src="#" alt="Project Example #1">
@@ -70,7 +123,7 @@
         </section>
       </div>
     </section>
-
+-->
 
 
 
@@ -170,6 +223,6 @@
       </section>
     </div>
 -->
-
+    </div>
   </body>
 </html>

@@ -1,22 +1,62 @@
 /*------------------------------------------------------------------------------*
   LAYOUT STYLES
 *------------------------------------------------------------------------------*/
-/* Ordering of CSS Properties:
-1) Positioning, 2) Display and Box Model, 3) Color, 4) Text, 5) Other
-*/
-
-#site-header {
-  display: flex;
-  flex-flow: row nowrap;
-  padding: .625em;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
+#site-wrapper {
+  min-width: 300px;
+/*
+  @media (min-width: $tabletSize) {
+    display: grid;
+    grid-template-columns: [col-line1] 1fr [col-line2] 1fr [col-line3];
+    grid-template-rows: [row-line1] auto [row-line2] auto [row-line3] auto [row-line4] auto [row-line5] auto [row-line6];
+    grid-template-areas:
+      "header header"
+      "hero hero"
+      "bio contact"
+      "projects projects"
+      "footer footer";
+    }
+  @media (min-width: $desktopSize) {
+    border: 2px solid black;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  */
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 #hero_header {
   background: url("../images/world.jpg") center/cover fixed;
   height: 100vh;
@@ -36,3 +76,4 @@
   align-items: center;
   background: rgba(0, 0, 0, 0.6)
 }
+*/

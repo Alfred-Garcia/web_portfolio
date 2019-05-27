@@ -3,13 +3,21 @@
 *------------------------------------------------------------------------------*/
 
 //Font Styles
-$fontStack: Arial, Helvetica, sans-serif;
+$titleFontStack: "Archivo Narrow", Arial, Helvetica, Sans-Serif;
+$fontStack: "Open Sans", Arial, Helvetica, Sans-Serif;
 
-//My Colors
-$myBlue: #7FFFFF;
+//My Used Colors
+$myBlue: #6CC4EE;
 $fbBlue: #3B5998;
 $twBlue: #1DA1F2;
-$liBlue: #0077B5; 
+$liBlue: #0077B5;
+$ghBlue: #4078C0;
+
+//My Break Points
+$tabletSize: 500px;
+$desktopSize: 900px;
+
+//Colors I May Use
 $myEarthBlue: #6B93D6;
 $myLightEarthBlue: #c3d3ee;
 $myLime: #6FDC6F;
